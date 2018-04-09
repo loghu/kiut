@@ -15,3 +15,19 @@
     </div>
   </body>
 </html>
+<?php
+if (isset($_POST['mail']) && isset($_POST['pas'])) {
+  $correo=$_POST['mail'];
+  $contra=$_POST['pas'];
+  aut ($correo, $contra);
+}
+function aut($correo, $contra){
+  include ('conexion.php');
+  $result = mysqli_query($con,"SELECT * FROM usuarios WHERE password='$contra' and usuario='$correo'");
+  if ($result->num_rows>=1) {
+    header("Location: menu.php");
+  }else {
+    echo "<script> alert('datos incorrectos. falta registrarte');</script>";
+  }
+}
+?>
