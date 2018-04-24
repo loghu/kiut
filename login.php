@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="estilo.css" media="screen" title="no title">
     <title>login</title>
   </head>
   <body>
@@ -11,6 +12,7 @@
         <input type="email" name="mail" class="caja" placeholder="Correo Electronico" required="true"><br>
         <input type="password" name="pas" class="caja" value="" placeholder="Contraseña" required="true"><br>
         <input type="submit" name="act" value="Enviar" class="boton"><br>
+        <input type="submit" name="act" value="registar" class="boton"><br>
       </form>
     </div>
   </body>

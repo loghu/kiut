@@ -1,0 +1,31 @@
+html,
+body{
+  background-color: #282c43;
+}
+div{
+  border-radius: 20px;
+}
+form{
+  padding: 20px;
+  background-color:  #3c8c97;
+  height: 150px;
+  width: 35%;
+  padding-left: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 30%;
+  margin-top: 43%;
+  margin: 5% auto;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  font-size: 30px;
+  border-radius: 20px;
+}
+input{
+  border-radius: 10px;
+  text-align: center;
+  font-size: 15px;
+  width: 50%;
+  height: 30px ;
+}
