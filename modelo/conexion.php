@@ -63,7 +63,7 @@ class conexion{
 	         if($validacion_pass){
 	         $consult = $this->conexion->query("select correo from datos where correo = '".$email."'");
 				       if(mysqli_num_rows($consult)> 0){
-	             	echo '1';// usuario ya existe
+	             	echo '1: el usuario ya existe';// usuario ya existe
 	             }else{
 	              $this->conexion->query("insert into datos (usuario,correo,pass1,pass2,cargo_id)
 									values('".$usuario."','".$email."', MD5('".$pass1."'),'".$pass2."',2)");
@@ -74,7 +74,7 @@ class conexion{
 	             }
 
 	         }else{
-	             echo '2';//las contraseñas no coinciden
+	             echo '2: las conraseñas no coinciden';//las contraseñas no coinciden
 	         }
 
 					 $consult2 = $this->conexion->query("select usuario,pass2 from datos where usuario = '".$usuario."'");
