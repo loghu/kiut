@@ -19,6 +19,32 @@ session_start();
 	<style media="screen">
 				.pageContent{background-image: url(css/image/ingrediente.jpg)}
 				.navLateral{background-color: #2EFEF7}
+				.section{background-color: blue}
+				.pedido{background-color: brown;
+				opacity: 0.8;
+				padding: 20px;
+				height: 50%;
+				width: 35%;
+				margin-left: 5%;
+				margin-right: 0%;
+				text-align: center;
+				margin-top: 0%;
+				margin-bottom: 10%;
+				font-size: 20px;
+				border-radius: 20px;}
+				.promo{background-color: brown;
+				opacity: 0.8;
+				padding: 20px;
+				height: 50%;
+				width: 35%;
+				margin-left: 60%;
+				margin-right: 0%;
+				text-align: center;
+				margin-top: 0%;
+				margin-bottom: 10%;
+				font-size: 20px;
+				border-radius: 20px;}
+
 </style>
 	<script src="js/jquery.min.js"></script>
 	<script>
@@ -79,50 +105,343 @@ session_start();
 						<?php
 							echo $_SESSION['usuario'] ;
 						?>
-						</small>
-					</span>
-				</figcaption>
-			</figure>
-			<div class="full-width tittles navLateral-body-tittle-menu">
-				<i class="zmdi zmdi-desktop-mac"></i><span class="hide-on-tablet">&nbsp; Usuario</span>
-			</div>
-			<nav class="full-width">
-				<ul class="full-width list-unstyle menu-principal">
-					<li class="full-width">
-						<a href="home.html" class="full-width">
-							<div class="navLateral-body-cl">
-								<i class="zmdi zmdi-view-dashboard"></i>
-							</div>
-							<div class="navLateral-body-cr hide-on-tablet">
-								PRODUCTOS
-	</nav>
-</div>
-	</section>
+					</small>
+				</span>
+			</figcaption>
+		</figure>
+		<div class="full-width tittles navLateral-body-tittle-menu">
+			<span class="hide-on-tablet">&nbsp; Cliente </span>
+		</div>
+		<nav class="full-width">
+			<ul class="full-width list-unstyle menu-principal">
+				<li class="full-width">
+					<a href="home.html" class="full-width">
+						<div class="navLateral-body-cl">
+							<i class="zmdi zmdi-view-dashboard"></i>
+						</div>
+						<div class="navLateral-body-cr hide-on-tablet">
+							CONTENIDO
+						</div>
+					</a>
+				</li>
+				<li class="full-width divider-menu-h"></li>
+				<li class="full-width">
+					<a href="#!" class="full-width btn-subMenu">
+						<div class="navLateral-body-cl">
+							<i class="zmdi zmdi-pizza"></i>
+						</div>
+						<div class="navLateral-body-cr hide-on-tablet">
+							PIZZAS
+						</div>
+						<span class="zmdi zmdi-chevron-left"></span>
+					</a>
+					<ul class="full-width menu-principal sub-menu-options">
+						<li class="full-width">
+							<a href="company.html" class="full-width">
+								<div class="navLateral-body-cl">
+									<i class="zmdi zmdi-pizza"></i>
+								</div>
+								<div class="navLateral-body-cr hide-on-tablet">
+								Hawaina
+								</div>
+							</a>
+						</li>
+						<li class="full-width" action="piza.php" method="post">
+							<a href="providers.html" class="full-width">
+								<div class="navLateral-body-cl">
+									<i class="zmdi zmdi-pizza"></i>
+								</div>
+								<div class="navLateral-body-cr hide-on-tablet">
+								Mexicana
+								</div>
+							</a>
+						</li>
+						<li class="full-width">
+							<a href="payments.html" class="full-width">
+								<div class="navLateral-body-cl">
+									<i class="zmdi zmdi-pizza"></i>
+								</div>
+								<div class="navLateral-body-cr hide-on-tablet">
+								De peperoni
+								</div>
+							</a>
+						</li>
+						<li class="full-width">
+							<a href="categories.html" class="full-width">
+								<div class="navLateral-body-cl">
+									<i class="zmdi zmdi-pizza"></i>
+								</div>
+								<div class="navLateral-body-cr hide-on-tablet">
+									Carnes frias
+								</div>
+							</a>
+						</li>
+						<li class="full-width">
+							<a href="categories.html" class="full-width">
+								<div class="navLateral-body-cl">
+									<i class="zmdi zmdi-pizza"></i>
+								</div>
+								<div class="navLateral-body-cr hide-on-tablet">
+									Tlaxiaqueña
+								</div>
+							</a>
+						</li>
+					</ul>
+				</li>
+
+
+				<li class="full-width">
+					<a href="#!" class="full-width btn-subMenu">
+						<div class="navLateral-body-cl">
+							<i class="zmdi zmdi-flower"></i>
+						</div>
+						<div class="navLateral-body-cr hide-on-tablet">
+							HAMBURGUESAS
+						</div>
+						<span class="zmdi zmdi-chevron-left"></span>
+					</a>
+					<ul class="full-width menu-principal sub-menu-options">
+						<li class="full-width">
+							<a href="company.html" class="full-width">
+								<div class="navLateral-body-cl">
+									<i class="zmdi zmdi-flower"></i>
+								</div>
+								<div class="navLateral-body-cr hide-on-tablet">
+								Hawaina
+								</div>
+							</a>
+						</li>
+						<li class="full-width">
+							<a href="providers.html" class="full-width">
+								<div class="navLateral-body-cl">
+									<i class="zmdi zmdi-flower"></i>
+								</div>
+								<div class="navLateral-body-cr hide-on-tablet">
+								Especial
+								</div>
+							</a>
+						</li>
+						<li class="full-width">
+							<a href="payments.html" class="full-width">
+								<div class="navLateral-body-cl">
+									<i class="zmdi zmdi-flower"></i>
+								</div>
+								<div class="navLateral-body-cr hide-on-tablet">
+								Doble carne
+								</div>
+							</a>
+						</li>
+						<li class="full-width">
+							<a href="categories.html" class="full-width">
+								<div class="navLateral-body-cl">
+									<i class="zmdi zmdi-flower"></i>
+								</div>
+								<div class="navLateral-body-cr hide-on-tablet">
+									Res
+								</div>
+							</a>
+						</li>
+						<li class="full-width">
+							<a href="categories.html" class="full-width">
+								<div class="navLateral-body-cl">
+									<i class="zmdi zmdi-flower"></i>
+								</div>
+								<div class="navLateral-body-cr hide-on-tablet">
+									Pollo
+								</div>
+							</a>
+						</li>
+					</ul>
+				</li>
+
+				<li class="full-width">
+					<a href="#!" class="full-width btn-subMenu">
+						<div class="navLateral-body-cl">
+							<i class="zmdi zmdi-label"></i>
+						</div>
+						<div class="navLateral-body-cr hide-on-tablet">
+							ALITAS
+						</div>
+						<span class="zmdi zmdi-chevron-left"></span>
+					</a>
+					<ul class="full-width menu-principal sub-menu-options">
+						<li class="full-width">
+							<a href="company.html" class="full-width">
+								<div class="navLateral-body-cl">
+									<i class="zmdi zmdi-label"></i>
+								</div>
+								<div class="navLateral-body-cr hide-on-tablet">
+								BBQ
+								</div>
+							</a>
+						</li>
+						<li class="full-width">
+							<a href="providers.html" class="full-width">
+								<div class="navLateral-body-cl">
+									<i class="zmdi zmdi-label"></i>
+								</div>
+								<div class="navLateral-body-cr hide-on-tablet">
+								Acidas
+								</div>
+							</a>
+						</li>
+						<li class="full-width">
+							<a href="payments.html" class="full-width">
+								<div class="navLateral-body-cl">
+									<i class="zmdi zmdi-label"></i>
+								</div>
+								<div class="navLateral-body-cr hide-on-tablet">
+								Abanero
+								</div>
+							</a>
+						</li>
+						<li class="full-width">
+							<a href="categories.html" class="full-width">
+								<div class="navLateral-body-cl">
+									<i class="zmdi zmdi-label"></i>
+								</div>
+								<div class="navLateral-body-cr hide-on-tablet">
+									Chipotle
+								</div>
+							</a>
+						</li>
+						<li class="full-width">
+							<a href="categories.html" class="full-width">
+								<div class="navLateral-body-cl">
+									<i class="zmdi zmdi-label"></i>
+								</div>
+								<div class="navLateral-body-cr hide-on-tablet">
+									Tlaxiaqueña
+								</div>
+							</a>
+						</li>
+					</ul>
+				</li>
+
+				<li class="full-width">
+					<a href="#!" class="full-width btn-subMenu">
+						<div class="navLateral-body-cl">
+							<i class="zmdi zmdi-glass"></i>
+						</div>
+						<div class="navLateral-body-cr hide-on-tablet">
+							BEBIDAS
+						</div>
+						<span class="zmdi zmdi-chevron-left"></span>
+					</a>
+					<ul class="full-width menu-principal sub-menu-options">
+						<li class="full-width">
+							<a href="company.html" class="full-width">
+								<div class="navLateral-body-cl">
+									<i class="zmdi zmdi-label"></i>
+								</div>
+								<div class="navLateral-body-cr hide-on-tablet">
+								Coca-cola
+								</div>
+							</a>
+						</li>
+						<li class="full-width">
+							<a href="providers.html" class="full-width">
+								<div class="navLateral-body-cl">
+									<i class="zmdi zmdi-label"></i>
+								</div>
+								<div class="navLateral-body-cr hide-on-tablet">
+								Pepsi
+								</div>
+							</a>
+						</li>
+						<li class="full-width">
+							<a href="payments.html" class="full-width">
+								<div class="navLateral-body-cl">
+									<i class="zmdi zmdi-label"></i>
+								</div>
+								<div class="navLateral-body-cr hide-on-tablet">
+								Fanta
+								</div>
+							</a>
+						</li>
+						<li class="full-width">
+							<a href="categories.html" class="full-width">
+								<div class="navLateral-body-cl">
+									<i class="zmdi zmdi-label"></i>
+								</div>
+								<div class="navLateral-body-cr hide-on-tablet">
+									Manzanita
+								</div>
+							</a>
+						</li>
+						<li class="full-width">
+							<a href="categories.html" class="full-width">
+								<div class="navLateral-body-cl">
+									<i class="zmdi zmdi-label"></i>
+								</div>
+								<div class="navLateral-body-cr hide-on-tablet">
+								Jugos
+								</div>
+							</a>
+						</li>
+					</ul>
+				</li>
+
+
+				<li class="full-width divider-menu-h"></li>
+				<li class="full-width">
+					<a href="#!" class="full-width btn-subMenu">
+						<div class="navLateral-body-cl">
+							<i class="zmdi zmdi-phone"></i>
+						</div>
+						<div class="navLateral-body-cr hide-on-tablet">
+							PROMOCIONES
+						</div>
+						<span class="zmdi zmdi-chevron-left"></span>
+					</a>
+					<ul class="full-width menu-principal sub-menu-options">
+						<li class="full-width">
+							<a href="#!" class="full-width">
+								<div class="navLateral-body-cl">
+									<i class="zmdi zmdi-label"></i>
+								</div>
+								<div class="navLateral-body-cr hide-on-tablet">
+									Dos por uno
+								</div>
+							</a>
+						</li>
+						<li class="full-width">
+							<a href="#!" class="full-width">
+								<div class="navLateral-body-cl">
+									<i class="zmdi zmdi-label"></i>
+								</div>
+								<div class="navLateral-body-cr hide-on-tablet">
+									Pizza familiar y refresco
+								</div>
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</section>
 
 	<!-- pageContent -->
 	<section class="full-width pageContent">
-		<section class="full-width text-center" style="padding: 40px 0;">
-			<h1 class="text-center tittles">Pizzeria Kiut"</h1>
+		<section class="full-width text-center" style="padding: 15px 0;">
+			<h1 class="text-center tittles">Pizzeria DAVIS"</h1>
 			<!-- Tiles -->
-			<article class="full-width tile">
-				<div class="tile-text">
-					<span class="text-condensedLight">
-						Puntos<br>
-						<small>Clientes</small>
-					</span>
-				</div>
-				<i class="zmdi zmdi-account tile-icon"></i>
-			</article>
-			<article class="full-width tile">
-				<div class="tile-text">
-					<span class="text-condensedLight">
-						<br>
-						<small>Promociones</small>
-					</span>
-				</div>
-				<i class="zmdi zmdi-label tile-icon"></i>
-			</article>
-		</section>
+			<form class="full-width pedido" >
+				<label for=""> PEDIDO</label><br>
+				<input type="text" name="pas" class="caja" value="" placeholder="pizaa" ><br>
+				<input type="text" name="pas" class="caja" value="" placeholder="tamaño"><br>
+				<input type="text" name="pas" class="caja" value="" placeholder="hamburguesa"><br>
+				<input type="text" name="pas" class="caja" value="" placeholder="alitas"><br>
+				<input type="text" name="pas" class="caja" value="" placeholder="cantidad de piezas"><br>
+				<input type="text" name="pas" class="caja" value="" placeholder="bebida"><br>
+				<input type="text" name="pas" class="caja" value="" placeholder="tamaño"><br>
+				<input type="submit" name="ace" value="Aceptar" class="botona"> <br>
+			</form>
+			<form class="full-width promo" >
+				<label for="">PROMOCIONES</label>
+			</form>
+</section>
 	</section>
 </body>
 </html>
