@@ -2,9 +2,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>hola </title>
+    <title>Pedidos </title>
   </head>
   <body>
-    <h1>como vas</h1>
+    <h1>Modulo Pedidos</h1>
   </body>
 </html>
