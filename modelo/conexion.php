@@ -4,7 +4,7 @@ class conexion{
 		private $server = "localhost";
 		private $usuario = "root";
 		private $pass = "";
-		private $db = "prueba";
+		private $db = "pruebas";
 		private $user ;
 	  	private $password;
 
