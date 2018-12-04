@@ -1,7 +1,7 @@
 ﻿<?php
 class conexion{
 		private $conexion;
-		private $server = "	shx27.guebs.net";
+		private $server = "shx27";
 		private $usuario = "ittlaxia_pruebas";
 		private $pass = "2yD4P)DS-g$7.8i5.uER";
 		private $db = "ittlaxia_pruebas";
