@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title> PROMCION </title>
+    <title> PROMOCIONES </title>
   </head>
   <body>
-    
+
   </body>
 </html>
