@@ -1,10 +1,10 @@
 ﻿<?php
 class conexion{
 		private $conexion;
-		private $server = "shx27";
-		private $usuario = "ittlaxia_pruebas";
-		private $pass = "2yD4P)DS-g$7.8i5.uER";
-		private $db = "ittlaxia_pruebas";
+		private $server = "localhost";
+		private $usuario = "root";
+		private $pass = "";
+		private $db = "prueba";
 		private $user ;
 	  	private $password;
 
@@ -48,7 +48,8 @@ class conexion{
 				}else{
 				session_start();
 				$_SESSION['validacion'] = 0 ;
-				echo "1";
+				echo "../vista/index.php";
+
 				}
 			} //fin logeo
 
