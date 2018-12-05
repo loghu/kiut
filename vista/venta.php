@@ -7,7 +7,5 @@
   </head>
   <body>
     <h1>Modulo de Ventas</h1>
-  </head>
-
   </body>
 </html>
