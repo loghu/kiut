@@ -9,6 +9,8 @@ session_start();
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Menu</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/sweetalert2.css">
 	<link rel="stylesheet" href="css/material.min.css">
@@ -17,10 +19,14 @@ session_start();
 	<link rel="stylesheet" href="css/principal.css">
 	<LINK rel="Shortcut Icon" href="css/image/icono.ico">
 	<style media="screen">
-				.pageContent{background-image: url(css/image/ingrediente.jpg)}
-				.navLateral{background-color: #2EFEF7}
-				.section{background-color: blue}
-				.pedido{background-color: brown;
+				.pageContent{
+				background-image: url(css/image/ingrediente.jpg)}
+				.navLateral{
+				background-color: #2EFEF7}
+				.section{
+				background-color: blue}
+				.pedido{
+				background-color: brown;
 				opacity: 0.8;
 				padding: 20px;
 				height: 50%;
@@ -32,20 +38,38 @@ session_start();
 				margin-bottom: 10%;
 				font-size: 20px;
 				border-radius: 20px;}
-				.promo{background-color: brown;
+				.bueno{
+					background: red;
+					font-size: 40px;
+				}
+				.promo{
+			/*	background-color: white;*/
 				opacity: 0.8;
-				padding: 20px;
-				height: 50%;
-				width: 35%;
-				margin-left: 60%;
-				margin-right: 0%;
 				text-align: center;
-				margin-top: 0%;
-				margin-bottom: 10%;
-				font-size: 20px;
-				border-radius: 20px;}
+				background: white;
+				height: 300px;
+			/*	width: 50%;
+				border-radius: 20px;*/
 
+			}
+
+				.lo{
+					text-align: center;
+					/*text-align: left;*/
+					margin-top: 2%;
+				}
+				.btn{
+					color:black;
+					background: #ffffff;
+					height: 40px;
+					width: 200px;
+					font-size: 20px;
+					border-radius: 20px;
+					margin-bottom: 0.5%;
+					border-width: medium;
+				}
 </style>
+
 	<script src="js/jquery.min.js"></script>
 	<script>
 		window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')
@@ -70,10 +94,10 @@ session_start();
 						<div class="mdl-tooltip" for="notifications">Cerrar Sesión</div>
 						<a href ="../controlador/exit.php" class = "salir">Salir</a>
 					</li>
-					<li class="btn-exit" id="btn-exit">
+	<!--				<li class="btn-exit" id="btn-exit">
 						<i class="zmdi zmdi-power"></i>
 						<div class="mdl-tooltip" for="btn-exit">Salir</div>
-					</li>
+					</li>-->
 					<li class="text-condensedLight noLink" >
 						<small>
 						<?php
@@ -253,7 +277,6 @@ session_start();
 						</li>
 					</ul>
 				</li>
-
 				<li class="full-width">
 					<a href="#!" class="full-width btn-subMenu">
 						<div class="navLateral-body-cl">
@@ -317,7 +340,6 @@ session_start();
 						</li>
 					</ul>
 				</li>
-
 				<li class="full-width">
 					<a href="#!" class="full-width btn-subMenu">
 						<div class="navLateral-body-cl">
@@ -381,8 +403,6 @@ session_start();
 						</li>
 					</ul>
 				</li>
-
-
 				<li class="full-width divider-menu-h"></li>
 				<li class="full-width">
 					<a href="#!" class="full-width btn-subMenu">
@@ -427,20 +447,24 @@ session_start();
 		<section class="full-width text-center" style="padding: 15px 0;">
 			<h1 class="text-center tittles">Pizzeria DAVIS"</h1>
 			<!-- Tiles -->
-			<form class="full-width pedido" >
-				<label for=""> PEDIDO</label><br>
-				<input type="text" name="pas" class="caja" value="" placeholder="pizaa" ><br>
-				<input type="text" name="pas" class="caja" value="" placeholder="tamaño"><br>
-				<input type="text" name="pas" class="caja" value="" placeholder="hamburguesa"><br>
-				<input type="text" name="pas" class="caja" value="" placeholder="alitas"><br>
-				<input type="text" name="pas" class="caja" value="" placeholder="cantidad de piezas"><br>
-				<input type="text" name="pas" class="caja" value="" placeholder="bebida"><br>
-				<input type="text" name="pas" class="caja" value="" placeholder="tamaño"><br>
-				<input type="submit" name="ace" value="Aceptar" class="botona"> <br>
-			</form>
-			<form class="full-width promo" >
-				<label for="">PROMOCIONES</label>
-			</form>
+
+<div class="bueno">
+	<h1>Nuestras Promociones</h1>
+</div>
+<div class="promo">
+	Promociones
+</div>
+
+
+<div class="lo">
+	<form method="post" action="pedido.php">
+		<input type="submit"  class="btn btn-lg btn-danger"name="Rojo" value="Ordenar">
+		<input type="submit" method="post" action="venta.php" class="btn btn-default"name="Promocion" value="Promocion">
+		<input type="submit" id="prender1" class="btn btn-success"name="verde" value="Compra">
+		<input type="submit" id="prender2" class="btn btn-primary"name="azul" value="NO se">
+	</form>
+</div>
+
 </section>
 	</section>
 </body>

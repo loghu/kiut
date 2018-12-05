@@ -2,9 +2,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title> martes</title>
+    <title>Ventas</title>
+    <LINK rel="Shortcut Icon" href="css/image/icono.ico">
   </head>
   <body>
-    <h1>que show</h1>
+    <h1>Modulo de Ventas</h1>
   </body>
 </html>
