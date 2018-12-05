@@ -17,7 +17,9 @@ session_start();
     </style>
   </head>
   <body>
-    <h1>Yo tengo el poder</h1>
+		<div class="page-header">
+  <h1>ADMINISTRADOR <small>Buenas tardes</small></h1>
+</div>
     <nav class="navBar-options-list">
       <ul class="list-unstyle">
         <li class="btn-Notification" id="notifications">

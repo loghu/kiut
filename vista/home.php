@@ -80,6 +80,8 @@ session_start();
 	<script src="js/main.js" ></script>
 </head>
 <body>
+	  <script src="http://code.jquery.com/jquery.js"></script>
+		 <script src="js/bootstrap.min.js"></script>
 
 <!-- navBar -->
 <div class="full-width navBar">
