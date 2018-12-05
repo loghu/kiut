@@ -35,7 +35,7 @@ class conexion{
 				$_SESSION['validacion'] = 1;
         $_SESSION['idCuenta']=$row['idCuenta'];
 	    	$_SESSION['usuario'] = $row['usuario'];
-				echo "../vista/home.php"; //Respuesta Mensaje donde redireccionara
+				echo "../vista/admin.php"; //Respuesta Mensaje donde redireccionara
 
 			}else if($row['cargo_id'] == 2) { // usuario
 
