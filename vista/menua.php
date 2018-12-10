@@ -127,7 +127,7 @@ session_start();
 			</figcaption>
 		</figure>
 		<div class="full-width tittles navLateral-body-tittle-menu">
-			<span class="hide-on-tablet">&nbsp; Cliente </span>
+			<span class="hide-on-tablet">&nbsp; Administrador </span>
 		</div>
 		<nav class="full-width">
 			<ul class="full-width list-unstyle menu-principal">

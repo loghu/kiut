@@ -1,3 +1,17 @@
+botones
+.btn{
+  color:black;
+  background: #ffffff;
+  height: 40px;
+  width: 200px;
+  font-size: 20px;
+  border-radius: 20px;
+  margin-bottom: 0.5%;
+  border-width: medium;
+}
+
+
+
 <nav class="navbar navbar-default" role="navigation">
   <!-- El logotipo y el icono que despliega el menú se agrupan
        para mostrarlos mejor en los dispositivos móviles -->
@@ -58,3 +72,35 @@
     </ul>
   </div>
 </nav>
+
+
+
+
+<!-- navBar -->
+<div class="full-width navBar">
+		<div class="full-width navBar-options">
+			<i class="zmdi zmdi-more-vert btn-menu" id="btn-menu"></i>
+			<div class="mdl-tooltip" for="btn-menu">Menu</div>
+			<nav class="navBar-options-list">
+				<ul class="list-unstyle">
+					<li class="btn-Notification" id="notifications">
+						<!--<i class="zmdi zmdi-notifications"></i>
+						 <i class="zmdi zmdi-notifications-active btn-Notification" id="notifications"></i> -->
+						<div class="mdl-tooltip" for="notifications">Cerrar Sesión</div>
+						<a href ="../controlador/exit.php" class = "salir">Salir</a>
+					</li>
+	<!--				<li class="btn-exit" id="btn-exit">
+						<i class="zmdi zmdi-power"></i>
+						<div class="mdl-tooltip" for="btn-exit">Salir</div>
+					</li>-->
+					<li class="text-condensedLight noLink" >
+						<small>
+						<?php
+							echo $_SESSION['usuario'] ;
+						?>
+						</small>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>

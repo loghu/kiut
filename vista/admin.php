@@ -9,43 +9,69 @@ session_start();
     <title>admin</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   	<script src="https://netdna.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<LINK rel="Shortcut Icon" href="css/image/icono.ico">
     <style media="screen">
       body{
-        background: red;
+				background: #FFFF00;
+				background-image: url(css/image/ingrediente.jpg)
       }
-
+			.navbar{
+        background: white;
+      }
     </style>
   </head>
   <body>
-		<div class="page-header">
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="menua.php">Menu</a></li>
+					<li><a href="venta.php">Venta</a></li>
+					<li><a href="promocion.php">Promociones</a></li>
+					<li><a>        <?php
+					            echo $_SESSION['usuario'] ;
+					          ?>
+									</a></li>
+					<li>	<a href ="../controlador/exit.php" class = "salir">Salir</a></li>
+			</div>
+		</nav>
+	<!--	<div class="page-header">
   <h1>ADMINISTRADOR <small>Buenas tardes</small></h1>
-</div>
-    <nav class="navBar-options-list">
-      <ul class="list-unstyle">
-        <li class="btn-Notification" id="notifications">
-          <!--<i class="zmdi zmdi-notifications"></i>
-           <i class="zmdi zmdi-notifications-active btn-Notification" id="notifications"></i> -->
-          <div class="mdl-tooltip" for="notifications">Cerrar Sesión</div>
-          <a href ="../controlador/exit.php" class = "salir">Salir</a>
-        </li>
-				<!--<li class="btn-exit" id="btn-exit">
-          <i class="zmdi zmdi-power"></i>
-          <div class="mdl-tooltip" for="btn-exit">Salir</div>
-        </li>-->
-        <li class="text-condensedLight noLink" >
-          <small>
-          <?php
-            echo $_SESSION['usuario'] ;
-          ?>
-          </small>
-        </li>
-      </ul>
-    </nav>
+</div>-->
+
     <div class="panel panel-primary">
   <div class="panel-body">
-    Contenido del panel
+		<table class="table">
+  <thead class="thead-dark">
+    <tr>
+			<th scope="col">#</th>
+      <th scope="col">Usuario</th>
+      <th scope="col">Promocion</th>
+      <th scope="col">Venta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Hugo</td>
+      <td>Dos por uno</td>
+      <td>15/Noviembre/2018</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Ever</td>
+      <td>Pizaa familiar</td>
+      <td>22/Noviembre/2018</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>juan jose</td>
+      <td>Alitas</td>
+      <td>20/Noviembre/2018</td>
+    </tr>
+  </tbody>
+</table>
   </div>
-  <div class="panel-footer">Pie del panel</div>
+  <div class="panel-footer">Contenido</div>
 </div>
 
   </body>
