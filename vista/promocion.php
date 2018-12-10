@@ -43,11 +43,7 @@
       Promociones:<br>
       <img src="../imagenes/3.png" alt="" class="img-thumbnail"><br>
       <button type="button" class="btn btn-info">Aceptar</button>
-<<<<<<< HEAD
-    </div><!--
-=======
     </div>
->>>>>>> b90ad77a38a345c06d0e2254a93a45f9f5ee097e
     <div class="panel-heading">Miercoles</div>
     <div class="panel-body">
       Promociones<br>
@@ -71,11 +67,7 @@
     <div class="panel-heading">Domingo</div>
     <div class="panel-body">
       Promociones<br>
-<<<<<<< HEAD
-      <button type="button" class="btn btn-info">Información</button>-->
-=======
       <button type="button" class="btn btn-info">Información</button>
->>>>>>> b90ad77a38a345c06d0e2254a93a45f9f5ee097e
     </div>
     </div>
     </div>
