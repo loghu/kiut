@@ -43,7 +43,7 @@
       Promociones:<br>
       <img src="../imagenes/3.png" alt="" class="img-thumbnail"><br>
       <button type="button" class="btn btn-info">Aceptar</button>
-    </div><!--
+    </div>
     <div class="panel-heading">Miercoles</div>
     <div class="panel-body">
       Promociones<br>
@@ -67,7 +67,7 @@
     <div class="panel-heading">Domingo</div>
     <div class="panel-body">
       Promociones<br>
-      <button type="button" class="btn btn-info">Información</button>-->
+      <button type="button" class="btn btn-info">Información</button>
     </div>
     </div>
     </div>
