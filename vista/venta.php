@@ -1,3 +1,7 @@
+<?php
+session_start();
+if(isset ($_SESSION['validacion']) && $_SESSION['validacion'] == 1) {
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -27,7 +31,7 @@
     </nav>
 
     <div class="panel panel-danger">
-      <div class="panel-heading">Observa nuestras promociones</div>
+      <div class="panel-heading">Venta de productos</div>
       <div class="panel-body">
     Productos
       <div class="panel panel-success">
@@ -70,3 +74,10 @@
     </div>
   </body>
 </html>
+<?php
+}else{		echo "<script type='text/javascript'>
+                alert('Debe iniciar sesión');
+                window.location.href='../vista/index.php';
+            </script>";
+          }
+           ?>

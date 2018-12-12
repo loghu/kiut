@@ -1,3 +1,7 @@
+<?php
+session_start();
+	if(isset ($_SESSION['validacion']) && $_SESSION['validacion'] == 1) {
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -83,18 +87,18 @@
    <div class="container">
       <form class="row" method="POST" action="../controlador/orden.php" >
         <h1>PEDIDO</h1><br>
-        <input type="text" name="pi" class="caja" value="" id="pi" placeholder="Pizza"  ><br>
+        <input type="text" name="pi" class="caja" value="" id="pi" placeholder="Pizza" maxlength="15"  ><br>
         <select class="caja" name="ta" type="text" id="ta" formControlName="tipo" >
-          <option value="niguna" type="text">Tamaño...</option>
+          <option value="niguna" type="text">Tamaño de la pizza...</option>
           <option value="Personal"type="text"> Personal</option>
           <option value="Mediana"type="text"> Mediana</option>
           <option value="Grande"type="text">Grande</option>
           <option value="Familiar"type="text">Familiar</option>
         </select><br>
-        <input type="text" name="hg" class="caja" value="" id="hg" placeholder="Hamburguesa"><br>
-        <input type="text" name="a" class="caja" value="" id="a" placeholder="Alitas"><br>
+        <input type="text" name="hg" class="caja" value="" id="hg" placeholder="Hamburguesa" maxlength="15"><br>
+        <input type="text" name="a" class="caja" value="" id="a" placeholder="Alitas" maxlength="15"><br>
         <select class="caja" name="ca" type="number" id="ca" formControlName="tipo" >
-          <option value="Sin alitas">Cantidad...</option>
+          <option value="Sin alitas">Cantidad de alitas...</option>
           <option value="6"> 6 Piezas</option>
           <option value="12"> 12 Piezas</option>
           <option value="24">24 Piezas</option>
@@ -107,7 +111,7 @@
           <option value="Fresca">Fresca</option>
         </select><br>
         <select class="caja" name="tam" type="text" id="tam" formControlName="tipo" >
-          <option value="Sin bebida">Tamaño...</option>
+          <option value="Sin bebida">Tamaño de la bebida...</option>
           <option value="600 ml"> 600 ml</option>
           <option value="1.5 litros"> 1.5 litros</option>
           <option value="2.5 litros">2.5 litros</option>
@@ -130,3 +134,11 @@
 
   </body>
 </html>
+
+<?php
+}else{		echo "<script type='text/javascript'>
+                alert('Debe iniciar sesión');
+                window.location.href='../vista/index.php';
+            </script>";
+          }
+           ?>

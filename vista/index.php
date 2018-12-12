@@ -52,7 +52,7 @@
         <div style="clear:both;"></div>
 
          <div class="group">
-            <input type="text" name="user" id="user" placeholder="Usuario">
+            <input type="text" name="user" id="user" placeholder="Usuario" maxlength="15">
             <span class="highlight"></span>
             <span class="bar"></span>
             <label>
@@ -62,7 +62,7 @@
         </div>
 
         <div class="group">
-            <input type="password" name="password" id="password" placeholder="Password">
+            <input type="password" name="password" id="password" placeholder="Password" maxlength="15">
             <span class="highlight"></span>
             <span class="bar"></span>
             <label>
@@ -92,7 +92,7 @@
         <div style="clear:both;"></div>
 
         <div class="group">
-            <input type="text" name="usuario" id="usuario" required placeholder="Usuario">
+            <input type="text" name="usuario" id="usuario" required placeholder="Usuario" maxlength="15">
             <span class="highlight"></span>
             <span class="bar"></span>
             <label>
@@ -100,7 +100,7 @@
 			</label>
         </div>
         <div class="group">
-            <input type="email" name="email" id="email" required placeholder="Email">
+            <input type="email" name="email" id="email" required placeholder="Email" maxlength="30">
             <span class="highlight"></span>
             <span class="bar"></span>
             <label>
@@ -108,7 +108,7 @@
 			</label>
         </div>
         <div class="group">
-            <input type="password" name="pass1" id="pass1" required placeholder="Contraseña">
+            <input type="password" name="pass1" id="pass1" required placeholder="Contraseña" maxlength="15">
             <span class="highlight"></span>
             <span class="bar"></span>
             <label>
@@ -116,7 +116,7 @@
 			</label>
         </div>
         <div class="group">
-            <input type="password" name="pass2" id="pass2" required placeholder="Confirme contraseña">
+            <input type="password" name="pass2" id="pass2" required placeholder="Confirme contraseña" maxlength="15">
             <span class="highlight"></span>
             <span class="bar"></span>
             <label>

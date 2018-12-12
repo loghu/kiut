@@ -68,6 +68,10 @@ session_start();
 					margin-bottom: 0.5%;
 					border-width: medium;
 				}
+				a{
+				color: white;
+				font-size: 20px;
+				}
 </style>
 
 	<script src="js/jquery.min.js"></script>
@@ -88,16 +92,15 @@ session_start();
 				<div class="mdl-tooltip" for="btn-menu">Menu</div>
 				<nav class="navBar-options-list">
 					<ul class="list-unstyle">
-						<li class="btn-Notification" id="notifications">
-							<div class="mdl-tooltip" for="notifications">Cerrar Sesión</div>
-							<a href ="../controlador/exit.php" class = "salir">Salir</a>
-						</li>
 						<li class="text-condensedLight noLink" >
-							<small>
-							<?php
-								echo $_SESSION['usuario'] ;
-							?>
-							</small>
+							<a href="venta.php">Venta</a>
+							<a href="pedido.php">ordenar</a>
+							<a href="promocion.php">Promociones</a>
+							<li class="btn-Notification" id="notifications">
+
+								<div class="mdl-tooltip" for="notifications">Cerrar Sesión</div>
+								<a href ="../controlador/exit.php" class = "salir">Salir</a>
+							</li>
 						</li>
 					</ul>
 				</nav>
@@ -441,26 +444,24 @@ session_start();
 			<h1 class="text-center tittles">Pizzeria DAVIS"</h1>
 			<!-- Tiles -->
 <div class="bueno">
-	<h1>Nuestras Promociones</h1>
+	<h1>Observa nuestras Promociones</h1>
 </div>
 <div class="promo">
-	Promociones
 </div>
-<div class="lo">
+<!--<div class="lo">
 	<form method="post" action="pedido.php">
 		<input type="submit"  class="btn btn-lg btn-danger"name="Rojo" value="Ordenar">
 	</form>
-</div>
+</div>-->
 </section>
 	</section>
 </body>
 </html>
-
 <?php
 	}else{
 		echo "<script type='text/javascript'>
                 alert('Debe iniciar sesión');
-                window.location.href='index.php';
+                window.location.href='../vista/index.php';
             </script>";
 		}
 ?>
