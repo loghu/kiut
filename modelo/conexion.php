@@ -78,10 +78,10 @@ class conexion{
 					                session_start();
 					                $_SESSION['validacion'] = 1 ;
 													$_SESSION['usuario'] = $usuario;
-					              	//echo "../vista/home.php";
-													echo "<script type='text/javascript'>
+					              	echo "../vista/home.php";
+												/*	echo "<script type='text/javascript'>
 																			window.location.href='../vista/home.php';
-																	</script>";
+																	</script>";*/
 					             }
 
 					         }else{
