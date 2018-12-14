@@ -10,7 +10,7 @@ session_start();
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <script src="https://netdna.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <LINK rel="Shortcut Icon" href="css/image/icono.ico">
-      <style media="screen">
+    <style media="screen">
       body{
         background: #000000;
 			}
@@ -20,6 +20,17 @@ session_start();
 			img{
 				text-align: center;
 			}
+
+			.card{
+				text-align: center;
+			}
+			h5{
+				font-size: 30px;
+			}
+			p{
+				font-size: 20px;
+			}
+
       </style>
   </head>
   <body>
@@ -41,17 +52,89 @@ session_start();
       <div class="panel-heading">Lunes</div>
       <div class="panel-body">
         Promociones:<br>
-				<!--	<img src="../imagenes/3.png" alt="" class="img-circle"><br>-->
-					<form class="" action="promocion.php" method="post">
-						<button type="submit" class="btn btn-success" value="dos por uno"id="promo" name="promo">Aceptar</button>
-					</form>
+				<div class="row">
+	  <div class="col-sm-6">
+	    <div class="card" actio"home.php">
+				  <img class="card-img-top" src="../imagenes/4.png" alt="Card image cap">
+					<SCRIPT LANGUAGE="JavaScript">
+						 function tu () {
+							 alert ("Aceptar la orden");
+											}
+									</SCRIPT>
+	      <div class="card-body">
+					<h5 class="card-title">Promocion del dia</h5>
+					<p class="card-text">Orden de alitas + coca.cola de 600 ml por $80.</p>
+					<a href="home.php" type="submit"class="btn btn-primary" onclick="tu()">aceptar</a>
+	      </div>
+	    </div>
+	  </div>
+		<div class="card" actio"home.php">
+				<img class="card-img-top" src="../imagenes/4.png" alt="Card image cap">
+				<SCRIPT LANGUAGE="JavaScript">
+					 function tu () {
+						 alert ("Aceptar la orden");
+										}
+								</SCRIPT>
+			<div class="card-body">
+				<h5 class="card-title">Promocion del dia</h5>
+				<p class="card-text">Orden de alitas + coca.cola de 600 ml por $80.</p>
+				<a href="home.php" type="submit"class="btn btn-primary" onclick="tu()">aceptar</a>
+			</div>
+		</div>
+	</div>
     </div>
     <div class="panel-heading">Martes</div>
     <div class="panel-body">
       Promociones:<br>
+			<div class="row">
+  <div class="col-sm-6">
+    <div class="card" actio"home.php">
+			  <img class="card-img-top" src="../imagenes/4.png" alt="Card image cap">
+				<SCRIPT LANGUAGE="JavaScript">
+					 function tu () {
+						 alert ("Aceptar la orden");
+										}
+								</SCRIPT>
+      <div class="card-body">
+				<h5 class="card-title">Promocion del dia</h5>
+				<p class="card-text">Orden de alitas + coca.cola de 600 ml por $80.</p>
+				<a href="home.php" type="submit"class="btn btn-primary" onclick="tu()">aceptar</a>
+      </div>
+    </div>
+  </div>
+	<div class="card" actio"home.php">
+			<img class="card-img-top" src="../imagenes/4.png" alt="Card image cap">
+			<SCRIPT LANGUAGE="JavaScript">
+				 function tu () {
+					 alert ("Aceptar la orden");
+									}
+							</SCRIPT>
+		<div class="card-body">
+			<h5 class="card-title">Promocion del dia</h5>
+			<p class="card-text">Orden de alitas + coca.cola de 600 ml por $80.</p>
+			<a href="home.php" type="submit"class="btn btn-primary" onclick="tu()">aceptar</a>
+		</div>
+	</div>
+</div>
+		<!--	<div class="card" style="width: 50rem;">
+				<img class="card-img-top" src="../imagenes/4.png" alt="Card image cap">
+				<div class="card-body">
+					<h5 class="card-title">Promocion del dia</h5>
+					<p class="card-text">Orden de alitas + coca.cola de 600 ml por $80.</p>
+				</div>
+			</div>-->
+
     <!--  <img src="../imagenes/3.png" alt="" class="img-thumbnail"><br>-->
-      <button type="button" class="btn btn-info">Aceptar</button>
-    </div><!--
+		<!--<form class="" action="home.php" >
+			<SCRIPT LANGUAGE="JavaScript">
+				 function tu () {
+					 alert ("Aceptar la orden");
+									}
+							</SCRIPT>
+							  <button type="submit" class="btn btn-info" onclick="tu()">Aceptar</button>
+		</form>
+
+    </div>
     <div class="panel-heading">Miercoles</div>
     <div class="panel-body">
       Promociones<br>
@@ -79,8 +162,6 @@ session_start();
     </div>
     </div>
     </div>
-
-
   </body>
 </html>
 
