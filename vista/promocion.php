@@ -44,7 +44,7 @@ session_start();
       </div>
     </nav>
 
-    <div class="panel panel-primary">
+<div class="panel panel-primary">
       <div class="panel-heading">Observa nuestras promociones</div>
       <div class="panel-body">
     Promociones
@@ -77,7 +77,7 @@ session_start();
 								</SCRIPT>
 			<div class="card-body">
 				<h5 class="card-title">Promocion del dia</h5>
-				<p class="card-text">Orden de alitas + coca.cola de 600 ml por $80.</p>
+				<p class="card-text">pizza mediana + pepsi 1.5 litros por $150</p>
 				<a href="home.php" type="submit"class="btn btn-primary" onclick="tu()">aceptar</a>
 			</div>
 		</div>
@@ -97,7 +97,7 @@ session_start();
 								</SCRIPT>
       <div class="card-body">
 				<h5 class="card-title">Promocion del dia</h5>
-				<p class="card-text">Orden de alitas + coca.cola de 600 ml por $80.</p>
+				<p class="card-text">Todas nuestras pizzas al dos por uno.</p>
 				<a href="home.php" type="submit"class="btn btn-primary" onclick="tu()">aceptar</a>
       </div>
     </div>
