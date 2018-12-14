@@ -69,7 +69,7 @@ if(isset ($_SESSION['validacion']) && $_SESSION['validacion'] == 1) {
       </tbody>
       <tbody>
         <tr class="active">
-          <th scope="row">2</th>
+          <th scope="row">3</th>
           <td>Alitas</td>
           <td>3</td>
           <td>$ 65</td>
@@ -78,7 +78,16 @@ if(isset ($_SESSION['validacion']) && $_SESSION['validacion'] == 1) {
       </tbody>
       <tbody>
         <tr class="active">
-          <th scope="row">2</th>
+          <th scope="row">4</th>
+          <td>mexicana</td>
+          <td>3</td>
+          <td>$ 65</td>
+          <td>$205</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr class="active">
+          <th scope="row">5</th>
           <td>Alitas</td>
           <td>3</td>
           <td>$ 65</td>
@@ -87,7 +96,16 @@ if(isset ($_SESSION['validacion']) && $_SESSION['validacion'] == 1) {
       </tbody>
       <tbody>
         <tr class="active">
-          <th scope="row">2</th>
+          <th scope="row">6</th>
+          <td>piza</td>
+          <td>3</td>
+          <td>$ 65</td>
+          <td>$205</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr class="active">
+          <th scope="row">7</th>
           <td>Alitas</td>
           <td>3</td>
           <td>$ 65</td>
@@ -96,8 +114,8 @@ if(isset ($_SESSION['validacion']) && $_SESSION['validacion'] == 1) {
       </tbody>
       <tbody>
         <tr class="active">
-          <th scope="row">2</th>
-          <td>Alitas</td>
+          <th scope="row">8</th>
+          <td>hawaiana</td>
           <td>3</td>
           <td>$ 65</td>
           <td>$205</td>
@@ -105,8 +123,8 @@ if(isset ($_SESSION['validacion']) && $_SESSION['validacion'] == 1) {
       </tbody>
       <tbody>
         <tr class="active">
-          <th scope="row">2</th>
-          <td>Alitas</td>
+          <th scope="row">9</th>
+          <td>queso</td>
           <td>3</td>
           <td>$ 65</td>
           <td>$205</td>
@@ -114,25 +132,7 @@ if(isset ($_SESSION['validacion']) && $_SESSION['validacion'] == 1) {
       </tbody>
       <tbody>
         <tr class="active">
-          <th scope="row">2</th>
-          <td>Alitas</td>
-          <td>3</td>
-          <td>$ 65</td>
-          <td>$205</td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr class="active">
-          <th scope="row">2</th>
-          <td>Alitas</td>
-          <td>3</td>
-          <td>$ 65</td>
-          <td>$205</td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr class="active">
-          <th scope="row">2</th>
+          <th scope="row">10</th>
           <td>Alitas</td>
           <td>3</td>
           <td>$ 65</td>
