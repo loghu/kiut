@@ -69,7 +69,12 @@ if(isset ($_SESSION['validacion']) && $_SESSION['validacion'] == 1) {
       </tbody>
     </table>
 <form class="" action="home.php" >
-    <button type="sumit" class="btn btn-success">Aceptar</button>
+  <SCRIPT LANGUAGE="JavaScript">
+     function tu () {
+       alert ("Desea Aceptar");
+              }
+          </SCRIPT>
+    <button type="sumit" class="btn btn-success" onclick="tu()">Aceptar</button>
 </form>
 
     </div>
