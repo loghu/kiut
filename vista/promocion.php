@@ -111,7 +111,7 @@ session_start();
 							</SCRIPT>
 		<div class="card-body">
 			<h5 class="card-title">Promocion del dia</h5>
-			<p class="card-text">Orden de alitas + coca.cola de 600 ml por $80.</p>
+			<p class="card-text">En la compra de dos pizzas familiares se regala un refresto de 2.5 litros </p>
 			<a href="home.php" type="submit"class="btn btn-primary" onclick="tu()">aceptar</a>
 		</div>
 	</div>
