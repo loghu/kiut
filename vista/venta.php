@@ -12,7 +12,8 @@ if(isset ($_SESSION['validacion']) && $_SESSION['validacion'] == 1) {
     <LINK rel="Shortcut Icon" href="css/image/icono.ico">
       <style media="screen">
       body{
-        background-image: url(css/image/ingrediente.jpg)
+        /*background-image: url(css/image/ingrediente.jpg)*/
+        background: #000000;
       }
       .navbar{
         background: white;
@@ -67,7 +68,10 @@ if(isset ($_SESSION['validacion']) && $_SESSION['validacion'] == 1) {
         </tr>
       </tbody>
     </table>
-        <button type="button" class="btn btn-success">Aceptar</button>
+<form class="" action="home.php" >
+    <button type="sumit" class="btn btn-success">Aceptar</button>
+</form>
+
     </div>
     </div>
     </div>

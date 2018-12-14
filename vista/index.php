@@ -33,7 +33,12 @@
 	<link rel="stylesheet" href="css/index.css">
 	<LINK rel="Shortcut Icon" href="css/image/icono.ico">
 	<style media="screen">
-				body{background-image: url(css/image/ingrediente.jpg)}
+				body{
+					background: #000000;
+					/*background-image: url(css/image/ingrediente.jpg)*/
+				}
+				.login-card{background: red;
+				}
 </style>
 
   </head>
@@ -79,7 +84,7 @@
 
             <a class="hesap-olustur-link" href="index.php?ncapa=1">Necesitas registrarte? Registrate Aquí!</a>
         </div>
-		<hr><p id="msj" style="color: red;"></p>
+		<hr><p id="msj" style="color: #66CDAA;"></p>
     </form>
   </div>
 
@@ -130,7 +135,7 @@
 
         <a class="zaten-hesap-var-link" href="index.php?ncapa=0">¿Tienes una cuenta?, Ingresa.</a>
 
-				<hr><p id="msj2" style="color: red;"></p>
+				<hr><p id="msj2" style="color: #66CDAA;"></p>
     </form>
 </div>
 
@@ -155,7 +160,7 @@
 
         <a class="zaten-hesap-var-link" href="index.php?ncapa=0">¿Tienes una cuenta?</a>
 
-				<hr><p id="msj3" style="color: red;"></p>
+				<hr><p id="msj3" style="color: #66CDAA;"></p>
     </form>
 </div>
 

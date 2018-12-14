@@ -16,7 +16,9 @@ session_start();
     <LINK rel="Shortcut Icon" href="css/image/icono.ico">
     <style media="screen">
       body{
-        background-image: url(../imagenes/fondo2.jpg)
+				background: #000000;
+        /*background-image: url(../imagenes/fondo2.jpg);*/
+
       }
       .container{
         margin-top: 0%;
@@ -120,9 +122,22 @@ session_start();
       <!--  <select class="caja" type="number" id="tipo" formControlName="tipo" >
           <option value="">Promocion del dia...</option>
         </select><br>-->
-        <form method="post"action="home.php">
-        <input type="submit"  class="btn btn-default"name="apagar" value="Aceptar"><br>
+        <form action="home.php">
+					<SCRIPT LANGUAGE="JavaScript">
+						 function tu () {
+							 alert ("Esta seguro de su pedido");
+											}
+									</SCRIPT>
+        <input type="submit"  class="btn btn-default"name="apagar" value="Aceptar" onclick="tu()"><br>
       </form>
+			<form action="home.php">
+				<SCRIPT LANGUAGE="JavaScript">
+					 function tia () {
+						 alert ("Esta seguro de cancelar");
+										}
+								</SCRIPT>
+			<input type="submit"  class="btn btn-default"name="apagar" value="cancelar" onclick="tia()"><br>
+		</form>
       </form>
     </div>-->
   <!--  <div class="hola">

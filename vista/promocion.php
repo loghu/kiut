@@ -12,12 +12,14 @@ session_start();
     <LINK rel="Shortcut Icon" href="css/image/icono.ico">
       <style media="screen">
       body{
-        background: #FFFF00;
-        background-image: url(../imagenes/mantel.jpg)
-      }
+        background: #000000;
+			}
       .navbar{
         background: white;
       }
+			img{
+				text-align: center;
+			}
       </style>
   </head>
   <body>
@@ -39,13 +41,15 @@ session_start();
       <div class="panel-heading">Lunes</div>
       <div class="panel-body">
         Promociones:<br>
-        <img src="../imagenes/2.png" alt="" class="img-circle"><br>
-        <button type="button" class="btn btn-success">Aceptar</button>
+				<!--	<img src="../imagenes/3.png" alt="" class="img-circle"><br>-->
+					<form class="" action="promocion.php" method="post">
+						<button type="submit" class="btn btn-success" value="dos por uno"id="promo" name="promo">Aceptar</button>
+					</form>
     </div>
     <div class="panel-heading">Martes</div>
     <div class="panel-body">
       Promociones:<br>
-      <img src="../imagenes/3.png" alt="" class="img-thumbnail"><br>
+    <!--  <img src="../imagenes/3.png" alt="" class="img-thumbnail"><br>-->
       <button type="button" class="btn btn-info">Aceptar</button>
     </div><!--
     <div class="panel-heading">Miercoles</div>

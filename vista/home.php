@@ -20,7 +20,8 @@ session_start();
 	<LINK rel="Shortcut Icon" href="css/image/icono.ico">
 	<style media="screen">
 				.pageContent{
-				background-image: url(css/image/ingrediente.jpg)}
+					background: #000000;
+				/*background-image: url(css/image/ingrediente.jpg)*/}
 				.navLateral{
 				background-color: #2EFEF7}
 				.section{
@@ -39,7 +40,7 @@ session_start();
 				font-size: 20px;
 				border-radius: 20px;}
 				.bueno{
-					background: red;
+					background: #000000;
 					font-size: 40px;
 				}
 				.promo{
@@ -94,7 +95,7 @@ session_start();
 					<ul class="list-unstyle">
 						<li class="text-condensedLight noLink" >
 							<a href="venta.php">Venta</a>
-							<a href="pedido.php">ordenar</a>
+							<a href="pedido.php">Ordenar</a>
 							<a href="promocion.php">Promociones</a>
 							<li class="btn-Notification" id="notifications">
 
@@ -441,9 +442,9 @@ session_start();
 	<!-- pageContent -->
 	<section class="full-width pageContent">
 		<section class="full-width text-center" style="padding: 15px 0;">
-			<h1 class="text-center tittles">Pizzeria DAVIS"</h1>
+			<h1 class="text-center tittles">Pizzeria "DAVIS"</h1>
 			<!-- Tiles -->
-<div class="bueno">
+<div class="bueno" >
 	<h1>Observa nuestras Promociones</h1>
 </div>
 <div class="promo">

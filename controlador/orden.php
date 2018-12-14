@@ -29,7 +29,8 @@ session_start();
     <LINK rel="Shortcut Icon" href="css/image/icono.ico">
       <style media="screen">
       body{
-        background-image: url(../imagenes/mantel.jpg)
+        /*background-image: url(../imagenes/mantel.jpg)*/
+				background: #000000;
       }
       </style>
     <title>lista</title>
@@ -48,11 +49,13 @@ session_start();
     </nav>
 
     <div class="panel panel-primary">
-      <div class="panel-heading">Observa nuestras promociones</div>
+      <div class="panel-heading">Pedido de:  <?php
+									echo $_SESSION['usuario'] ;
+								?></div>
       <div class="panel-body">
     Productos
       <div class="panel panel-danger">
-      <div class="panel-heading">Lunes</div>
+      <div class="panel-heading">Orden</div>
       <div class="panel-body">
         <h3>Lista de productos:</h3><br>
         <?php
@@ -72,9 +75,24 @@ session_start();
          ?>
          <br>
          <br>
-         <form action="pdf.php">
-        <button type="button" class="btn btn-success">Aceptar</button>
+         <form action="../vista/venta.php">
+					 <SCRIPT LANGUAGE="JavaScript">
+	  		    	function hola () {
+	 		      		alert ("Aceptar la orden");
+	 		                 }
+	 		   					 </SCRIPT>
+        <button type="submit" class="btn btn-success" onclick="hola()">Aceptar   orden</button>
       </form>
+			 	<SCRIPT LANGUAGE="JavaScript">
+ 		    	function mi_alerta () {
+		      		alert ("Esta seguro de cancelar");
+		                 }
+		   					 </SCRIPT>
+			<form class="" action="../vista/pedido.php">
+				<button class="btn btn-success"type="submit" name="button" onClick="mi_alerta()">Cancelar orden</button>
+
+			</form>
+
     </div>
     </div>
     </div>

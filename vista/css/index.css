@@ -1,10 +1,10 @@
 html,
 body{
-    background-image: url(css/image/ingrediente.jpg)
-    background: black;
+  /*  background-image: url(css/image/ingrediente.jpg)*/
+    background: #ADD8E6;
 }
 .login-card {
-  opacity: 0.8;
+    opacity: 0.8;
     padding-left: auto;
     margin-left: 10%;
     margin-right: 10%;
@@ -16,7 +16,7 @@ body{
     -moz-background-size: cover;
     -ms-background-size: cover;
     -wenkit-background-size: cover;
-    background: red;
+    background: #ADD8E6;
     background-position: center center;
     background-repeat: no-repeat;
     position: center;
