@@ -89,7 +89,7 @@ session_start();
    <div class="container">
       <form class="row" method="POST" action="../controlador/orden.php" >
         <h1>PEDIDO</h1><br>
-        <input type="text" name="pi" class="caja" value="" id="pi" placeholder="Pizza" maxlength="15"  ><br>
+        <input type="text" name="pi" class="caja" value="" id="pi" placeholder="Pizza" maxlength="15" required  ><br>
         <select class="caja" name="ta" type="text" id="ta" formControlName="tipo" >
           <option value="niguna" type="text">Tamaño de la pizza...</option>
           <option value="Personal"type="text"> Personal</option>
@@ -97,7 +97,7 @@ session_start();
           <option value="Grande"type="text">Grande</option>
           <option value="Familiar"type="text">Familiar</option>
         </select><br>
-        <input type="text" name="hg" class="caja" value="" id="hg" placeholder="Hamburguesa" maxlength="15"><br>
+        <input type="text" name="hg" class="caja" value="" id="hg" placeholder="Hamburguesa" maxlength="15" ><br>
         <input type="text" name="a" class="caja" value="" id="a" placeholder="Alitas" maxlength="15"><br>
         <select class="caja" name="ca" type="number" id="ca" formControlName="tipo" >
           <option value="Sin alitas">Cantidad de alitas...</option>
