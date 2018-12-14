@@ -67,6 +67,78 @@ if(isset ($_SESSION['validacion']) && $_SESSION['validacion'] == 1) {
           <td>$205</td>
         </tr>
       </tbody>
+      <tbody>
+        <tr class="active">
+          <th scope="row">2</th>
+          <td>Alitas</td>
+          <td>3</td>
+          <td>$ 65</td>
+          <td>$205</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr class="active">
+          <th scope="row">2</th>
+          <td>Alitas</td>
+          <td>3</td>
+          <td>$ 65</td>
+          <td>$205</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr class="active">
+          <th scope="row">2</th>
+          <td>Alitas</td>
+          <td>3</td>
+          <td>$ 65</td>
+          <td>$205</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr class="active">
+          <th scope="row">2</th>
+          <td>Alitas</td>
+          <td>3</td>
+          <td>$ 65</td>
+          <td>$205</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr class="active">
+          <th scope="row">2</th>
+          <td>Alitas</td>
+          <td>3</td>
+          <td>$ 65</td>
+          <td>$205</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr class="active">
+          <th scope="row">2</th>
+          <td>Alitas</td>
+          <td>3</td>
+          <td>$ 65</td>
+          <td>$205</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr class="active">
+          <th scope="row">2</th>
+          <td>Alitas</td>
+          <td>3</td>
+          <td>$ 65</td>
+          <td>$205</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr class="active">
+          <th scope="row">2</th>
+          <td>Alitas</td>
+          <td>3</td>
+          <td>$ 65</td>
+          <td>$205</td>
+        </tr>
+      </tbody>
     </table>
 <form class="" action="home.php" >
   <SCRIPT LANGUAGE="JavaScript">
