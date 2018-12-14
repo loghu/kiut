@@ -75,7 +75,7 @@ session_start();
          ?>
          <br>
          <br>
-         <form action="../vista/venta.php">
+         <form action="../vista/home.php">
 					 <SCRIPT LANGUAGE="JavaScript">
 	  		    	function hola () {
 	 		      		alert ("Aceptar la orden");
